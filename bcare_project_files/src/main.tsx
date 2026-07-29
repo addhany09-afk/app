@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// حطينا الأقواس {} علشان ده Named Export
+import { BrowserRouter } from 'react-router-dom';
 import { Step1Vehicle } from './pages/Step1Vehicle';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <Step1Vehicle />
+    <BrowserRouter>
+      <Step1Vehicle />
+    </BrowserRouter>
   </React.StrictMode>
 );
