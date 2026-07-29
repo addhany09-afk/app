@@ -2,12 +2,22 @@
 <html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>تأمين BCare</title>
+    <!-- Tailwind CSS لتنسيق الصفحة -->
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
+  <body class="bg-gray-100 min-h-screen flex items-center justify-center">
     <div id="root"></div>
-    <script type="module" src="/src/pages/Step1Vehicle.tsx"></script>
+
+    <script type="module">
+      import React from 'https://esm.sh/react@18';
+      import ReactDOM from 'https://esm.sh/react-dom@18/client';
+      import Step1Vehicle from './src/pages/Step1Vehicle.tsx';
+
+      const rootElement = document.getElementById('root');
+      const root = ReactDOM.createRoot(rootElement);
+      root.render(React.createElement(Step1Vehicle));
+    </script>
   </body>
 </html>
